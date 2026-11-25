@@ -7,23 +7,23 @@
 
 ## Cautionary tale
 
-- Nigeria's farm-crowdfunding wave (TechCabal, 22 Feb 2022). ThriveAgric exited crowdfunding; Farmcrowdy left crowdfunding for a different model. A later report that Farmcrowdy owed investors ₦7.7bn is unverified.
+- Nigeria's farm-crowdfunding wave (TechCabal, 22 Feb 2022). ThriveAgric exited crowdfunding; Farmcrowdy left crowdfunding for a different model. Later press reports allege large unpaid investor balances on some of these platforms (unverified).
 
 ## Rents
 
-- Farmland rent: Ogun State ground rent ₦5,000/ha/yr (Obayelu et al. 2017, data around 2015; this is a state fee, not a market rent). A north-central figure of about ₦42,000/ha is unverified. A standard 50x100 ft plot is about 0.046 ha, so per-plot farm rent is a few thousand naira a year at most.
+- Farmland rent: Ogun State ground rent ₦5,000/ha/yr (Obayelu et al. 2017, data around 2015; this is a state fee, not a market rent). A north-central figure of about ₦42,000/ha is unverified. At these figures (one a state fee, one unverified, both dated), a 50x100 ft plot (about 0.046 ha) would yield roughly ₦230–₦2,000 a year. Current market farm rents still need to be established on the ground.
 - House rent: a 2-bedroom flat in Owerri was listed at about ₦1.2m/yr (PropertyPro, Feb 2025; page average ₦950k).
 
 ## Population and remittances
 
 - About 533,000 Nigerian-born people lived in the US in 2024 (MPI tabulation of the 2024 ACS; 476,008 in 2023).
-- The roughly 905,000 figure counts the wider diaspora, not people born in Nigeria.
+- The roughly 905,000 figure counts people reporting Nigerian ancestry (US-born included), per MPI; it is not a count of people born in Nigeria.
 - Do not use "1.5 million" or the "$3.9B" remittance figure.
-- Official remittances to Nigeria from all countries are roughly $20–23B a year.
+- Official remittances to Nigeria from all countries are roughly $20–23B a year (approximate; source to be added).
 
 ## Biggest risk: title
 
-- Under the Land Use Act, a Certificate of Occupancy is prima facie evidence only; family or communal claims and omo onile can displace tenants.
+- Under the Land Use Act, a Certificate of Occupancy is prima facie evidence only; family or communal claims and omo onile (local land-owning families or groups who demand payment or reclaim land) can displace tenants.
 
 ## Sources
 
