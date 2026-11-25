@@ -1,6 +1,6 @@
 # Jappa Labs
 
-Jappa Labs is a lab that builds brands and tools for Nigerians living abroad.
+Jappa Labs is a lab that builds brands and tools for west africans living abroad.
 
 We are starting with idle land and empty houses back home. We aim to verify the owner's title, find tenants (farmers for land, renters for houses), collect rent and send it abroad. Owners keep the asset and could spend less of their own money supporting family.
 
