@@ -1,0 +1,57 @@
+# Open-source projects tracked by the digest.
+# Want a project added? See https://github.com/Erriccc/jappa-labs/issues/6
+
+built_for_west_africa:
+  - repo: nyamebabaku-lab/efiewura
+    category: property and rent
+    description: Efie Wura Pro, rental management for Ghana with MoMo rent payments and owner payouts.
+  - repo: akeoj/Nigeria-real-estate-price-prediction
+    category: property and rent
+    description: Machine learning models that estimate property prices from Nigerian listing data.
+  - repo: thatmanfrancis/Hausevo
+    category: property and rent
+    description: Property listings, tenancy records and maintenance for the Nigerian rental market, starting from Lagos.
+  - repo: amirofekiti/Nigeria-Land-Registry-Blockchain-Prototype
+    category: land and title
+    description: Research prototype using a blockchain as an audit layer for land registration in Nigeria.
+  - repo: batestguy/crop-value-predictor
+    category: farm and farm data
+    description: Season Margin, an offline-first crop comparison tool for Nigerian farmers.
+  - repo: aa-Teye/Prop_collect
+    category: land and title
+    description: PropCollect, a property rate collection and analytics system for Ghana.
+
+building_blocks:
+  - repo: opengisch/QField
+    category: land and title
+    description: Mobile app for field mapping and surveys, built on QGIS.
+  - repo: opengisch/QFieldCloud
+    category: land and title
+    description: Cloud service that syncs QField projects and field data.
+  - repo: farmOS/farmOS
+    category: farm and farm data
+    description: Web-based farm record keeping and management.
+  - repo: frappe/lending
+    category: prices and payments
+    description: Open-source lending and loan management software.
+  - repo: getodk/collect
+    category: farm and farm data
+    description: Android app for collecting survey and field data offline.
+  - repo: getodk/central
+    category: farm and farm data
+    description: Server for managing ODK forms and collected data.
+  - repo: WFP-VAM/DataBridgesKnots
+    category: prices and payments
+    description: Get WFP market and food price data with Python, Stata or R.
+  - repo: agstack/inatrace-backend
+    category: farm and farm data
+    description: Backend for INATrace, supply chain traceability for smallholder farmers and cooperatives.
+  - repo: EvansSchoolPolicyAnalysisAndResearch/LSMS-Agricultural-Indicators-Code
+    category: farm and farm data
+    description: Code that builds agricultural indicators from LSMS household survey data.
+  - repo: OCHA-DAP/hdx-scraper-wfp-foodprices
+    category: prices and payments
+    description: Publishes WFP food price data to the Humanitarian Data Exchange.
+  - repo: MrObadiahEJ/terra
+    category: land and title
+    description: Terra, a blockchain-anchored land registry built on the ISO 19152 (LADM) standard.
