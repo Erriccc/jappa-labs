@@ -29,6 +29,9 @@ built_for_west_africa:
   - repo: Rexangels/RouteSure
     category: diaspora shipping
     description: Early-stage starter for Nigerian address validation, built around the NIPOST postcode API.
+  - repo: Josephadebiyi/neringa
+    category: diaspora shipping
+    description: Bago, a peer-to-peer international package delivery platform matching senders with travellers, with KYC, escrow, and Stripe and Paystack payments.
 
 building_blocks:
   - repo: opengisch/QField
@@ -130,3 +133,21 @@ building_blocks:
   - repo: OpenCerts/opencerts-website
     category: identity and verification
     description: Verifier for tamper-proof documents and certificates.
+  - repo: mo3awia89/peer-to-peer-crowdshipping
+    category: traveller carry
+    description: Concept-stage plan for international crowdshipping with travellers, starting with Jordan to UAE. README only, no code or licence yet.
+  - repo: thekiller23-hub/RouteMate
+    category: traveller carry
+    description: RouteMate, an early Django and React app matching delivery requests with travellers on the same route, with OTP handover and escrow.
+  - repo: mahaurpiyush-bit/CarryLink
+    category: traveller carry
+    description: CarryLink, an early Spring Boot and React app that matches senders with travellers by route, timing and spare capacity.
+  - repo: Abrahon/luggagelinker-backend
+    category: traveller carry
+    description: LuggageLinker backend, a Django REST API for matching package senders with travellers, with KYC, bookings, wallets and disputes. No README yet.
+  - repo: munatsimike/carry4me
+    category: diaspora shipping
+    description: Carry4Me, an in-development web app for diaspora senders to send parcels home with travellers. Its code includes Supabase, Stripe and delivery-OTP integration; the README still describes it as frontend-first.
+  - repo: cfandoh123/ParceFlyte
+    category: traveller carry
+    description: ParceFlyte, an early prototype matching parcels with travellers, with fee negotiation and KYC review. Payments and compliance checks are simulated.
