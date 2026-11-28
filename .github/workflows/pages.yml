@@ -1,0 +1,67 @@
+name: Pages
+
+# Builds the site from docs/ and deploys it to GitHub Pages.
+# Needs Settings > Pages > Source set to "GitHub Actions".
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_run:
+    # Pushes made by the scan workflow's own token do not start other workflows,
+    # so deploy again whenever a scan finishes (it may have committed an edition).
+    workflows: ["Digest scan"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
+        with:
+          persist-credentials: false
+
+      # The guide pages are the plugin's own reference files, copied in at build
+      # time so there is one source for every price. docs/guide/ is gitignored.
+      - name: Copy the plugin guide into the site
+        run: |
+          rm -rf docs/guide
+          cp -R plugins/send-to-nigeria/skills/send-to-nigeria/references docs/guide
+
+      - name: Test the digest and the site
+        run: python3 -m unittest discover -s digest/tests
+
+      - uses: actions/jekyll-build-pages@44a6e6beabd48582f863aeeb6cb2151cc1716697  # v1.0.13
+        with:
+          source: ./docs
+          destination: ./_site
+
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9  # v5.0.0
+        if: github.event_name != 'pull_request'
+        with:
+          path: ./_site
+
+  deploy:
+    needs: build
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346  # v5.0.1

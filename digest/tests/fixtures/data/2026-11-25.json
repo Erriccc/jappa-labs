@@ -1,0 +1,149 @@
+{
+ "date": "2026-11-25",
+ "generated_at": "2026-11-25T06:00:00Z",
+ "days": 90,
+ "detail_days": 1,
+ "authenticated": true,
+ "repos": [
+  {
+   "repo": "alpha/mover",
+   "url": "https://github.com/alpha/mover",
+   "group": "built_for_west_africa",
+   "category": "test",
+   "description": "A test project.",
+   "status": "ok",
+   "stars": 5,
+   "forks": 1,
+   "license": "MIT",
+   "archived": false,
+   "github_description": null,
+   "commits": {
+    "count": 50,
+    "authors": [],
+    "last_commit_at": "2026-12-01T10:00:00Z",
+    "items": []
+   },
+   "pull_requests": {
+    "opened": [],
+    "merged": [],
+    "opened_count": 0,
+    "merged_count": 0
+   },
+   "issues": {
+    "opened": [],
+    "closed": [],
+    "opened_count": 0,
+    "closed_count": 0
+   },
+   "releases_count": 0,
+   "releases": []
+  },
+  {
+   "repo": "beta/release",
+   "url": "https://github.com/beta/release",
+   "group": "building_blocks",
+   "category": "test",
+   "description": "A test project.",
+   "status": "ok",
+   "stars": 100,
+   "forks": 1,
+   "license": "MIT",
+   "archived": false,
+   "github_description": null,
+   "commits": {
+    "count": 50,
+    "authors": [],
+    "last_commit_at": "2026-12-01T10:00:00Z",
+    "items": []
+   },
+   "pull_requests": {
+    "opened": [],
+    "merged": [],
+    "opened_count": 0,
+    "merged_count": 0
+   },
+   "issues": {
+    "opened": [],
+    "closed": [],
+    "opened_count": 0,
+    "closed_count": 0
+   },
+   "releases_count": 0,
+   "releases": []
+  },
+  {
+   "repo": "gamma/hostile",
+   "url": "https://github.com/gamma/hostile",
+   "group": "built_for_west_africa",
+   "category": "test",
+   "description": "A test project.",
+   "status": "ok",
+   "stars": 7,
+   "forks": 1,
+   "license": "MIT",
+   "archived": false,
+   "github_description": null,
+   "commits": {
+    "count": 50,
+    "authors": [],
+    "last_commit_at": "2026-12-01T10:00:00Z",
+    "items": []
+   },
+   "pull_requests": {
+    "opened": [],
+    "merged": [],
+    "opened_count": 0,
+    "merged_count": 0
+   },
+   "issues": {
+    "opened": [],
+    "closed": [],
+    "opened_count": 0,
+    "closed_count": 0
+   },
+   "releases_count": 0,
+   "releases": []
+  },
+  {
+   "repo": "delta/missing",
+   "url": "https://github.com/delta/missing",
+   "group": "built_for_west_africa",
+   "category": "test",
+   "description": "A test project.",
+   "status": "not_found"
+  },
+  {
+   "repo": "Erriccc/jappa-labs",
+   "url": "https://github.com/Erriccc/jappa-labs",
+   "group": "own",
+   "category": "test",
+   "description": "A test project.",
+   "status": "ok",
+   "stars": 2,
+   "forks": 1,
+   "license": "MIT",
+   "archived": false,
+   "github_description": null,
+   "commits": {
+    "count": 50,
+    "authors": [],
+    "last_commit_at": "2026-12-01T10:00:00Z",
+    "items": []
+   },
+   "pull_requests": {
+    "opened": [],
+    "merged": [],
+    "opened_count": 0,
+    "merged_count": 0
+   },
+   "issues": {
+    "opened": [],
+    "closed": [],
+    "opened_count": 0,
+    "closed_count": 0
+   },
+   "releases_count": 0,
+   "releases": []
+  }
+ ]
+}
