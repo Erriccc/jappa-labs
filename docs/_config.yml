@@ -1,0 +1,30 @@
+title: Jappa Labs
+description: Open-source tools and research for the West African diaspora.
+url: "https://erriccc.github.io"
+baseurl: "/jappa-labs"
+theme: minima
+github_username: Erriccc
+
+# All of these are supported by GitHub Pages without a build Action.
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-optional-front-matter
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+
+# Digest editions are plain markdown with no front matter. The plugins above
+# render them, take the title from the first heading, and turn relative .md
+# links into page links. strip_title stops the heading showing twice.
+titles_from_headings:
+  strip_title: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+header_pages:
+  - send-to-nigeria.md
+  - about.md
