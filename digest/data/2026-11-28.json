@@ -1,10 +1,10 @@
 {
   "date": "2026-11-28",
-  "generated_at": "2026-11-28T05:22:09Z",
+  "generated_at": "2026-11-28T06:18:16Z",
   "days": 90,
-  "since": "2026-08-30T05:22:09Z",
+  "since": "2026-08-30T06:18:16Z",
   "detail_days": 1,
-  "detail_since": "2026-11-27T05:22:09Z",
+  "detail_since": "2026-11-27T06:18:16Z",
   "authenticated": true,
   "repos": [
     {
@@ -1078,14 +1078,14 @@
       "default_branch": "master",
       "stars": 1421,
       "forks": 365,
-      "open_issues": 203,
+      "open_issues": 202,
       "license": "GPL-2.0",
       "archived": false,
       "created_at": "2014-11-26T16:20:45Z",
-      "pushed_at": "2026-11-28T05:17:27Z",
+      "pushed_at": "2026-11-28T06:11:19Z",
       "github_description": "A simplified touch optimized interface for QGIS",
       "commits": {
-        "count": 626,
+        "count": 630,
         "authors": [
           "GNSSChristian",
           "MidnightCoder-m",
@@ -1103,8 +1103,32 @@
           "ptitjano",
           "tw0b33rs"
         ],
-        "last_commit_at": "2026-11-28T01:13:35Z",
+        "last_commit_at": "2026-11-28T06:08:42Z",
         "items": [
+          {
+            "sha": "487fa3a",
+            "author": "nirvn",
+            "message": "Merge pull request #8259 from opengisch/qt6_aab_apk",
+            "date": "2026-11-28T06:08:42Z"
+          },
+          {
+            "sha": "3f49f58",
+            "author": "nirvn",
+            "message": "Speed up CI by avoiding signing AABs/APKs twice",
+            "date": "2026-11-28T05:39:26Z"
+          },
+          {
+            "sha": "1d6d98b",
+            "author": "nirvn",
+            "message": "Upload AABs to the Play Store to break through the APK 100MB size limit",
+            "date": "2026-11-28T05:39:26Z"
+          },
+          {
+            "sha": "0ba97af",
+            "author": "nirvn",
+            "message": "Remove prehistoric pre Qt6 setup to produce signed APK/AAB",
+            "date": "2026-11-28T05:39:26Z"
+          },
           {
             "sha": "1c46521",
             "author": "opengis-ch",
@@ -1184,6 +1208,12 @@
         ],
         "merged": [
           {
+            "number": 8259,
+            "title": "Remove prehistoric pre Qt6 setup to produce signed APK/AAB",
+            "author": "nirvn",
+            "url": "https://github.com/opengisch/QField/pull/8259"
+          },
+          {
             "number": 8255,
             "title": "Let go of our Qt port overlays in favor of current Qt 6.11.3",
             "author": "nirvn",
@@ -1197,7 +1227,7 @@
           }
         ],
         "opened_count": 304,
-        "merged_count": 280
+        "merged_count": 281
       },
       "issues": {
         "opened": [],
@@ -3581,7 +3611,7 @@
       "description": "Open logistics platform with dispatch, driver app and customer storefront.",
       "status": "ok",
       "default_branch": "main",
-      "stars": 4982,
+      "stars": 4984,
       "forks": 1274,
       "open_issues": 22,
       "license": "AGPL-3.0",
@@ -3799,8 +3829,8 @@
       "description": "Open-source scheduling for booking pickup slots (formerly calcom/cal.com).",
       "status": "ok",
       "default_branch": "main",
-      "stars": 50440,
-      "forks": 15781,
+      "stars": 50441,
+      "forks": 15782,
       "open_issues": 1679,
       "license": "MIT",
       "archived": false,
@@ -4072,9 +4102,9 @@
         "2026-06": 0,
         "2026-07": 0,
         "2026-08": 0,
-        "2026-09": 271,
+        "2026-09": 270,
         "2026-10": 347,
-        "2026-11": 382
+        "2026-11": 383
       },
       "dependents": null
     },
@@ -4836,13 +4866,13 @@
       "description": "Shared inbox with a WhatsApp Cloud API channel and human handoff.",
       "status": "ok",
       "default_branch": "develop",
-      "stars": 40702,
+      "stars": 40703,
       "forks": 9916,
-      "open_issues": 1653,
+      "open_issues": 1654,
       "license": "Other",
       "archived": false,
       "created_at": "2019-08-14T06:50:51Z",
-      "pushed_at": "2026-11-28T05:07:24Z",
+      "pushed_at": "2026-11-28T06:19:36Z",
       "github_description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
       "commits": {
         "count": 526,
@@ -4940,6 +4970,12 @@
       },
       "pull_requests": {
         "opened": [
+          {
+            "number": 16862,
+            "title": "fix(whatsapp): reopen composer after missed customer messages",
+            "author": "muhsin-k",
+            "url": "https://github.com/chatwoot/chatwoot/pull/16862"
+          },
           {
             "number": 16861,
             "title": "fix(config): use JSON for signed and encrypted messages",
@@ -5117,7 +5153,7 @@
             "url": "https://github.com/chatwoot/chatwoot/pull/14723"
           }
         ],
-        "opened_count": 90,
+        "opened_count": 91,
         "merged_count": 22
       },
       "issues": {
@@ -5290,7 +5326,7 @@
       "description": "Open workflow automation with WhatsApp, Stripe and Chatwoot pieces.",
       "status": "ok",
       "default_branch": "main",
-      "stars": 25761,
+      "stars": 25762,
       "forks": 4529,
       "open_issues": 950,
       "license": "Other",
@@ -6304,24 +6340,6 @@
             "title": "fix(connections): reconnecting a connection offers permissions added in newer piece versions",
             "author": "majewskibartosz",
             "url": "https://github.com/activepieces/activepieces/pull/17666"
-          },
-          {
-            "number": 17663,
-            "title": "fix(gmail): triggers stop skipping and stalling, fix ids, headers, charsets and filters",
-            "author": "kishanprmr",
-            "url": "https://github.com/activepieces/activepieces/pull/17663"
-          },
-          {
-            "number": 17735,
-            "title": "fix(jira-cloud): triggers stop missing, stalling on and over-reporting events",
-            "author": "kishanprmr",
-            "url": "https://github.com/activepieces/activepieces/pull/17735"
-          },
-          {
-            "number": 17756,
-            "title": "fix(notion): triggers no longer miss or re-send rows and comments edited in the same minute",
-            "author": "kishanprmr",
-            "url": "https://github.com/activepieces/activepieces/pull/17756"
           }
         ],
         "merged": [
@@ -6438,12 +6456,6 @@
             "title": "I invited a teammate on & they successfully accepted the invite. However, as promised, I have not received the 1000 credits for my teammate joining.",
             "author": "bytewavecurated",
             "url": "https://github.com/activepieces/activepieces/issues/17849"
-          },
-          {
-            "number": 17675,
-            "title": "Piece Request: remove.ac (drop-in remove.bg API replacement)",
-            "author": "szp2005",
-            "url": "https://github.com/activepieces/activepieces/issues/17675"
           }
         ],
         "closed": [
@@ -6519,13 +6531,13 @@
       "description": "Workflow automation with WhatsApp Cloud nodes (fair-code licence).",
       "status": "ok",
       "default_branch": "master",
-      "stars": 212349,
-      "forks": 61690,
-      "open_issues": 1300,
+      "stars": 212352,
+      "forks": 61688,
+      "open_issues": 1301,
       "license": "Other",
       "archived": false,
       "created_at": "2019-06-22T09:24:21Z",
-      "pushed_at": "2026-11-28T04:02:49Z",
+      "pushed_at": "2026-11-28T06:10:24Z",
       "github_description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "commits": {
         "count": 1000,
@@ -7427,6 +7439,12 @@
       },
       "pull_requests": {
         "opened": [
+          {
+            "number": 45616,
+            "title": "chore: Resolve master→3.x sync conflict",
+            "author": "n8n-assistant[bot]",
+            "url": "https://github.com/n8n-io/n8n/pull/45616"
+          },
           {
             "number": 45036,
             "title": "feat(core): Add held action commit endpoint and read-through classifier (no-changelog)",
@@ -9748,12 +9766,6 @@
             "title": "fix(editor): Save credential IDs that the editor matches by name",
             "author": "redgp0g",
             "url": "https://github.com/n8n-io/n8n/pull/43008"
-          },
-          {
-            "number": 45431,
-            "title": "Load tag names before filtering by a clicked tag chip",
-            "author": "Wooohaaa",
-            "url": "https://github.com/n8n-io/n8n/pull/45431"
           }
         ],
         "merged": [
@@ -10725,7 +10737,7 @@
           }
         ],
         "opened_count": 988,
-        "merged_count": 525
+        "merged_count": 524
       },
       "issues": {
         "opened": [
@@ -10740,12 +10752,6 @@
             "title": "MCP Client in Agent Preview is missing the \"Tools to Include\" option (n8n 3.3.0)",
             "author": "WenjuanOlympus",
             "url": "https://github.com/n8n-io/n8n/issues/45544"
-          },
-          {
-            "number": 45432,
-            "title": "One-click deploy option: add a Deploy on Nife button?",
-            "author": "nida",
-            "url": "https://github.com/n8n-io/n8n/issues/45432"
           },
           {
             "number": 45394,
@@ -10814,12 +10820,6 @@
             "title": "MCP Client in Agent Preview is missing the \"Tools to Include\" option (n8n 3.3.0)",
             "author": "WenjuanOlympus",
             "url": "https://github.com/n8n-io/n8n/issues/45544"
-          },
-          {
-            "number": 45432,
-            "title": "One-click deploy option: add a Deploy on Nife button?",
-            "author": "nida",
-            "url": "https://github.com/n8n-io/n8n/issues/45432"
           },
           {
             "number": 45389,
@@ -10995,8 +10995,8 @@
         "2026-07": 0,
         "2026-08": 0,
         "2026-09": 0,
-        "2026-10": 40,
-        "2026-11": 960
+        "2026-10": 41,
+        "2026-11": 959
       },
       "dependents": null
     },
@@ -11008,7 +11008,7 @@
       "description": "TypeScript framework for issuing, holding and verifying digital credentials.",
       "status": "ok",
       "default_branch": "main",
-      "stars": 361,
+      "stars": 362,
       "forks": 266,
       "open_issues": 247,
       "license": "Apache-2.0",
@@ -11280,7 +11280,7 @@
       "description": "Python agent for issuing and verifying verifiable credentials.",
       "status": "ok",
       "default_branch": "main",
-      "stars": 493,
+      "stars": 494,
       "forks": 532,
       "open_issues": 156,
       "license": "Apache-2.0",
@@ -11693,40 +11693,8 @@
         "merged_count": 53
       },
       "issues": {
-        "opened": [
-          {
-            "number": 2753,
-            "title": "iOS : Implement x509_san_dns Client ID Verification in Inji Mobile Wallet",
-            "author": "sanchi-singh24",
-            "url": "https://github.com/inji/inji-wallet/issues/2753"
-          },
-          {
-            "number": 2744,
-            "title": "mDoc/mDL Revocation for Mobile",
-            "author": "sanchi-singh24",
-            "url": "https://github.com/inji/inji-wallet/issues/2744"
-          },
-          {
-            "number": 2716,
-            "title": "Sync changes from release-1.0.x into develop  branch",
-            "author": "hegdenitin",
-            "url": "https://github.com/inji/inji-wallet/issues/2716"
-          },
-          {
-            "number": 2715,
-            "title": "Automation Task: Implement Headless Automation for mDoc Proximity Sharing (ISO 18013-5)",
-            "author": "sanchi-singh24",
-            "url": "https://github.com/inji/inji-wallet/issues/2715"
-          }
-        ],
-        "closed": [
-          {
-            "number": 2716,
-            "title": "Sync changes from release-1.0.x into develop  branch",
-            "author": "hegdenitin",
-            "url": "https://github.com/inji/inji-wallet/issues/2716"
-          }
-        ],
+        "opened": [],
+        "closed": [],
         "opened_count": 88,
         "closed_count": 45
       },
@@ -11886,12 +11854,6 @@
             "url": "https://github.com/mosip/esignet/issues/2846"
           },
           {
-            "number": 2845,
-            "title": "[Task]: Update naming convention for UI & API Automation Testrigs reports ",
-            "author": "rachik-hue",
-            "url": "https://github.com/mosip/esignet/issues/2845"
-          },
-          {
             "number": 2836,
             "title": "Task: Support property-level PATCH updates for additionalConfig",
             "author": "KashiwalHarsh",
@@ -11902,18 +11864,6 @@
             "title": "[BUG] [AUTOMATION] Git Action is failing in API test rig automation, API test rig also failing for login_id_select issue",
             "author": "zesu22",
             "url": "https://github.com/mosip/esignet/issues/2821"
-          },
-          {
-            "number": 2808,
-            "title": "Add JSON-LD VC verifier implmentation",
-            "author": "anushasunkada",
-            "url": "https://github.com/mosip/esignet/issues/2808"
-          },
-          {
-            "number": 2804,
-            "title": "Cherry pick following issue changes in thunderid/main to thunderid/1.2.x",
-            "author": "sacrana0",
-            "url": "https://github.com/mosip/esignet/issues/2804"
           },
           {
             "number": 2673,
