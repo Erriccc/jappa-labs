@@ -1,0 +1,14 @@
+{%- comment -%}
+  Digest editions, newest first. Used by the homepage and digest/index.md;
+  pass pages=site.pages.
+{%- endcomment -%}
+{% assign editions = include.pages | where_exp: "p", "p.path contains 'digest/'" | where_exp: "p", "p.name != 'index.md'" | sort: "path" | reverse %}
+{% if editions.size > 0 %}
+<ul>
+{% for edition in editions %}
+  <li><a href="{{ edition.url | relative_url }}">{{ edition.title | default: edition.name | escape }}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+No editions yet.
+{% endif %}

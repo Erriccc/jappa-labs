@@ -32,9 +32,29 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: post
+      layout: post-back
+      back_url: /research/
+      back_label: Research
+  # Guide pages and digest editions get a "Back to ..." link
+  # (_layouts/page-back.html, _includes/back-link.html).
+  - scope:
+      path: "guide"
+    values:
+      layout: page-back
+      back_url: /guides.html
+      back_label: Guides
+  - scope:
+      path: "digest"
+    values:
+      layout: page-back
+      back_url: /digest/
+      back_label: Digest
 
 header_pages:
   - send-to-nigeria.md
+  - guides.md
   - research/index.md
+  - digest/index.md
+  - open-work.md
+  - skill.md
   - about.md
