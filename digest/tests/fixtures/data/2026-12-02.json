@@ -1,0 +1,295 @@
+{
+ "date": "2026-12-02",
+ "generated_at": "2026-12-02T06:00:00Z",
+ "days": 90,
+ "detail_days": 1,
+ "authenticated": true,
+ "repos": [
+  {
+   "repo": "alpha/mover",
+   "url": "https://github.com/alpha/mover",
+   "group": "built_for_west_africa",
+   "category": "test",
+   "description": "A test project.",
+   "status": "ok",
+   "stars": 10,
+   "forks": 1,
+   "license": null,
+   "archived": false,
+   "github_description": null,
+   "commits": {
+    "count": 50,
+    "authors": [
+     "Jane Doe",
+     "ada",
+     "dependabot[bot]"
+    ],
+    "last_commit_at": "2026-12-01T10:00:00Z",
+    "items": [
+     {
+      "sha": "aaa0002",
+      "author": "Jane Doe",
+      "message": "Fix typo",
+      "date": "2026-11-28T13:00:00Z"
+     },
+     {
+      "sha": "aaa0003",
+      "author": "ada",
+      "message": "Add receipts",
+      "date": "2026-12-01T09:00:00Z",
+      "login": "ada"
+     },
+     {
+      "sha": "aaa0004",
+      "author": "dependabot[bot]",
+      "message": "Bump lodash",
+      "date": "2026-12-01T10:00:00Z",
+      "login": "dependabot[bot]"
+     }
+    ]
+   },
+   "pull_requests": {
+    "opened": [],
+    "merged": [],
+    "opened_count": 0,
+    "merged_count": 0
+   },
+   "issues": {
+    "opened": [],
+    "closed": [],
+    "opened_count": 0,
+    "closed_count": 0
+   },
+   "releases_count": 0,
+   "releases": []
+  },
+  {
+   "repo": "beta/release",
+   "url": "https://github.com/beta/release",
+   "group": "building_blocks",
+   "category": "test",
+   "description": "A test project.",
+   "status": "ok",
+   "stars": 120,
+   "forks": 1,
+   "license": "MIT",
+   "archived": false,
+   "github_description": null,
+   "commits": {
+    "count": 50,
+    "authors": [
+     "kemi"
+    ],
+    "last_commit_at": "2026-12-01T10:00:00Z",
+    "items": [
+     {
+      "sha": "ccc0001",
+      "author": "kemi",
+      "message": "Prepare 2.0",
+      "date": "2026-12-01T08:00:00Z",
+      "login": "kemi"
+     }
+    ]
+   },
+   "pull_requests": {
+    "opened": [],
+    "merged": [
+     {
+      "number": 7,
+      "title": "Ship 2.0",
+      "author": "kemi",
+      "url": "https://github.com/beta/release/pull/7"
+     },
+     {
+      "number": 8,
+      "title": "Bump deps",
+      "author": "renovate[bot]",
+      "url": "https://github.com/beta/release/pull/8"
+     }
+    ],
+    "opened_count": 0,
+    "merged_count": 2
+   },
+   "issues": {
+    "opened": [],
+    "closed": [],
+    "opened_count": 0,
+    "closed_count": 0
+   },
+   "releases_count": 2,
+   "releases": [
+    {
+     "tag": "v2.0.0",
+     "name": "Version 2",
+     "published_at": "2026-12-01T12:00:00Z",
+     "url": "https://github.com/beta/release/releases/tag/v2.0.0"
+    },
+    {
+     "tag": "v0.1.0",
+     "name": "Ancient",
+     "published_at": "2026-10-01T12:00:00Z",
+     "url": "https://github.com/beta/release/releases/tag/v0.1.0"
+    }
+   ]
+  },
+  {
+   "repo": "gamma/hostile",
+   "url": "https://github.com/gamma/hostile",
+   "group": "built_for_west_africa",
+   "category": "test",
+   "description": null,
+   "status": "ok",
+   "stars": 7,
+   "forks": 1,
+   "license": "MIT",
+   "archived": false,
+   "github_description": "{{ 7*7 }} {% include x %} | [x](http://evil) <script>alert(1)</script>",
+   "commits": {
+    "count": 50,
+    "authors": [
+     "tunde"
+    ],
+    "last_commit_at": "2026-12-01T10:00:00Z",
+    "items": [
+     {
+      "sha": "ddd0001",
+      "author": "tunde",
+      "message": "{{ 7*7 }} {% include x %} | [x](http://evil) <script>alert(1)</script>",
+      "date": "2026-12-01T11:00:00Z",
+      "login": "tunde"
+     }
+    ]
+   },
+   "pull_requests": {
+    "opened": [],
+    "merged": [],
+    "opened_count": 0,
+    "merged_count": 0
+   },
+   "issues": {
+    "opened": [],
+    "closed": [],
+    "opened_count": 0,
+    "closed_count": 0
+   },
+   "releases_count": 1,
+   "releases": [
+    {
+     "tag": "v1",
+     "name": "{{ 7*7 }} {% include x %} | [x](http://evil) <script>alert(1)</script>",
+     "published_at": "2026-12-01T12:00:00Z",
+     "url": "https://github.com/gamma/hostile/releases/tag/v1"
+    }
+   ]
+  },
+  {
+   "repo": "delta/missing",
+   "url": "https://github.com/delta/missing",
+   "group": "built_for_west_africa",
+   "category": "test",
+   "description": "A test project.",
+   "status": "not_found"
+  },
+  {
+   "repo": "epsilon/new",
+   "url": "https://github.com/epsilon/new",
+   "group": "building_blocks",
+   "category": "test",
+   "description": "A test project.",
+   "status": "ok",
+   "stars": 40,
+   "forks": 1,
+   "license": "MIT",
+   "archived": false,
+   "github_description": null,
+   "commits": {
+    "count": 50,
+    "authors": [
+     "zainab"
+    ],
+    "last_commit_at": "2026-12-01T10:00:00Z",
+    "items": [
+     {
+      "sha": "eee0001",
+      "author": "zainab",
+      "message": "First commit",
+      "date": "2026-12-02T01:00:00Z",
+      "login": "zainab"
+     }
+    ]
+   },
+   "pull_requests": {
+    "opened": [],
+    "merged": [],
+    "opened_count": 0,
+    "merged_count": 0
+   },
+   "issues": {
+    "opened": [],
+    "closed": [],
+    "opened_count": 0,
+    "closed_count": 0
+   },
+   "releases_count": 0,
+   "releases": []
+  },
+  {
+   "repo": "Erriccc/jappa-labs",
+   "url": "https://github.com/Erriccc/jappa-labs",
+   "group": "own",
+   "category": "test",
+   "description": "A test project.",
+   "status": "ok",
+   "stars": 3,
+   "forks": 1,
+   "license": "MIT",
+   "archived": false,
+   "github_description": null,
+   "commits": {
+    "count": 50,
+    "authors": [
+     "Erriccc",
+     "github-actions[bot]"
+    ],
+    "last_commit_at": "2026-12-01T10:00:00Z",
+    "items": [
+     {
+      "sha": "bbb0002",
+      "author": "github-actions[bot]",
+      "message": "Digest scan data for 2026-12-02",
+      "date": "2026-12-02T06:01:00Z",
+      "login": "github-actions[bot]"
+     },
+     {
+      "sha": "bbb0003",
+      "author": "Erriccc",
+      "message": "Add research posts",
+      "date": "2026-12-01T15:00:00Z",
+      "login": "Erriccc"
+     }
+    ]
+   },
+   "pull_requests": {
+    "opened": [],
+    "merged": [
+     {
+      "number": 22,
+      "title": "Editions",
+      "author": "Erriccc",
+      "url": "https://github.com/Erriccc/jappa-labs/pull/22"
+     }
+    ],
+    "opened_count": 0,
+    "merged_count": 1
+   },
+   "issues": {
+    "opened": [],
+    "closed": [],
+    "opened_count": 0,
+    "closed_count": 0
+   },
+   "releases_count": 0,
+   "releases": []
+  }
+ ]
+}

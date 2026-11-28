@@ -21,6 +21,7 @@ import urllib.request
 API = "https://api.github.com"
 DEPS = "https://api.deps.dev"
 HERE = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(HERE, "data")
 MAX_PAGES = 10
 ISO = "%Y-%m-%dT%H:%M:%SZ"
 
@@ -223,10 +224,11 @@ def scan_repo(entry, since, detail_since):
         # Commits on the default branch (solo repos often push straight to main).
         commits = []
         for c in paginate(f"/repos/{name}/commits", {"sha": branch, "since": since_iso, "per_page": 100}):
-            author = (c.get("author") or {}).get("login") or ((c.get("commit") or {}).get("author") or {}).get("name")
+            login = (c.get("author") or {}).get("login")  # None when GitHub can't match the commit to an account
+            author = login or ((c.get("commit") or {}).get("author") or {}).get("name")
             msg = ((c.get("commit") or {}).get("message") or "").split("\n", 1)[0]
             date = ((c.get("commit") or {}).get("committer") or {}).get("date")
-            commits.append({"sha": c.get("sha", "")[:7], "author": author, "message": msg, "date": date})
+            commits.append({"sha": c.get("sha", "")[:7], "author": author, "message": msg, "date": date, "login": login})
         authors = sorted({c["author"] for c in commits if c["author"]})
         latest, _ = request(f"/repos/{name}/commits", {"sha": branch, "per_page": 1})
         last_commit = None
@@ -334,7 +336,7 @@ def main():
         print("scanning " + entry["repo"], file=sys.stderr)
         result["repos"].append(scan_repo(entry, since, detail_since))
 
-    path = os.path.join(HERE, "data", result["date"] + ".json")
+    path = os.path.join(DATA_DIR, result["date"] + ".json")
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(result, f, indent=2, ensure_ascii=False)

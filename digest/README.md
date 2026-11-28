@@ -4,9 +4,11 @@ A regularly updated digest of open-source projects that serve Nigerians and West
 
 ## What is here
 
-- `watchlist.yml` lists the projects we follow, each with a one-line description and a category.
+- `watchlist.yml` lists the projects we follow, each with a one-line description and a category. Our own projects are in the `own` group: editions show them in a separate "From Jappa Labs" section and never rank them with the others. A description must not contain ` #`, which starts a comment.
 - `scan.py` reads public GitHub data for each project and records what shipped.
 - `data/YYYY-MM-DD.json` holds the results of each scan.
+- `render.py` builds a weekly edition from the scan files.
+- `tests/` holds the tests for `render.py` and the site. Run them with `python3 -m unittest discover -s digest/tests`.
 
 ## Run the scan
 
@@ -18,7 +20,7 @@ python3 digest/scan.py
 
 For each project it records counts over the last 90 days (change this with `--days N`):
 
-- commits on the default branch (count and authors);
+- commits on the default branch (count and authors). Each listed commit has an `author` (the GitHub login, or the git name if GitHub can't match an account) and a `login` (the GitHub login, or `null`). Files from before 28 November 2026 have no `login`;
 - pull requests opened and merged;
 - issues opened and closed (pull requests are not counted as issues);
 - releases;
@@ -43,7 +45,28 @@ GitHub does not let us list who starred a repo we do not own, so star history ca
 
 The script works without a token, but GitHub allows only 60 unauthenticated requests an hour. To scan the full list, set `GITHUB_TOKEN` or `GH_TOKEN` in your environment. A token with no extra scopes is enough, as all data is public. If a repo cannot be found, or the rate limit is reached, that repo is marked in the output and the scan carries on.
 
-A [GitHub Actions workflow](../.github/workflows/digest-scan.yml) runs the scan every day and commits the new data file.
+## Render an edition
+
+```bash
+python3 digest/render.py --if-due
+```
+
+Editions are weekly; the scan is daily. `render.py` reads the scan files from the last 7 days and writes `docs/digest/YYYY-MM-DD-edition-N.md`, numbered after the newest edition there. It credits the people behind each project, with a profile link when the GitHub login is known, and lists:
+
+- **Builders this week:** projects with commits or merged pull requests recorded in the week, counted from the daily commit lists without duplicates. Accounts ending in `[bot]` are left out. Star changes are against the scan from a week earlier, when there is one.
+- **Shipped:** releases and merged pull requests from the week.
+- **From Jappa Labs:** the `own` group, without bot commits.
+
+Options:
+
+- `--if-due` writes an edition only if 7 or more days have passed since the newest one. `--force` writes one anyway.
+- `--date YYYY-MM-DD` picks the scan to render (default: the newest), and `--data-dir` and `--out-dir` change where files are read and written.
+
+It never overwrites an edition, and it skips the edition if more than 20% of repos failed to scan. Text from repos is escaped, so it can't break the Jekyll build.
+
+## Automation
+
+A [GitHub Actions workflow](../.github/workflows/digest-scan.yml) runs the scan every day, renders an edition when one is due, and commits the results. To publish an edition now, run the workflow by hand with **force_edition** ticked. A [Pages workflow](../.github/workflows/pages.yml) then rebuilds the site.
 
 ## Suggest a project
 

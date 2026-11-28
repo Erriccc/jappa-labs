@@ -178,3 +178,8 @@ building_blocks:
   - repo: cfandoh123/ParceFlyte
     category: traveller carry
     description: ParceFlyte, an early prototype matching parcels with travellers, with fee negotiation and KYC review. Payments and compliance checks are simulated.
+
+own:
+  - repo: Erriccc/jappa-labs
+    category: open-source tools and research
+    description: Jappa Labs, home of this digest, the send-to-nigeria plugin and the research behind them.

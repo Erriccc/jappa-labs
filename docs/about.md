@@ -6,7 +6,7 @@ title: About
 
 The digest is a regular round-up of open-source projects that serve Nigerians and West Africans, at home and in the diaspora. It covers land and title, property and rent, farming, prices and payments, shipping, messaging, and identity.
 
-Each edition credits the people who build these projects, says what they shipped, and suggests ways to help. The figures come from public GitHub data, gathered by a [scan script](https://github.com/Erriccc/jappa-labs/blob/main/digest/README.md) that runs every day.
+A new edition comes out each week. Each one credits the people who build these projects, says what they shipped, and suggests ways to help, such as trying a project, starring it or opening an issue. The figures come from public GitHub data, gathered by a [scan script](https://github.com/Erriccc/jappa-labs/blob/main/digest/README.md) that runs every day.
 
 ## The projects we follow
 
@@ -16,4 +16,4 @@ Know a project we missed, or spotted a mistake? Say so in [issue #6](https://git
 
 ## Who runs this
 
-Jappa Labs is maintained by [Erriccc](https://github.com/Erriccc). The source for this site, the digest and the plugin is at [github.com/Erriccc/jappa-labs](https://github.com/Erriccc/jappa-labs), under the MIT licence.
+Jappa Labs is maintained by [Erriccc](https://github.com/Erriccc). Each edition also has a short "From Jappa Labs" section on our own open-source work, [Erriccc/jappa-labs](https://github.com/Erriccc/jappa-labs). It is listed on its own and never ranked with the projects we follow. The source for this site, the digest and the plugin is at [github.com/Erriccc/jappa-labs](https://github.com/Erriccc/jappa-labs), under the MIT licence.

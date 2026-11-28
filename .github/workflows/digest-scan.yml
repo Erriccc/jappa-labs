@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 6 * * *"  # daily, 06:00 UTC (issue #6)
   workflow_dispatch:
+    inputs:
+      force_edition:
+        description: "Render a digest edition now, even if one is not due"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -56,15 +61,29 @@ jobs:
           name: digest-data
           path: ${{ env.DATA_DIR }}
 
-      - name: Commit data file
+      - name: Render weekly edition
+        env:
+          FORCE: ${{ inputs.force_edition }}
+        run: |
+          if [ "$FORCE" = "true" ]; then
+            python3 digest/render.py --if-due --force
+          else
+            python3 digest/render.py --if-due
+          fi
+
+      - name: Commit data file and edition
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$DATA_DIR"
+          git add "$DATA_DIR" docs/digest
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
           fi
-          git commit -m "Digest scan data for $(date -u +%Y-%m-%d)"
+          if git diff --cached --quiet -- docs/digest; then
+            git commit -m "Digest scan data for $(date -u +%Y-%m-%d)"
+          else
+            git commit -m "Digest scan data and edition for $(date -u +%Y-%m-%d)"
+          fi
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push

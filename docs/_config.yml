@@ -5,7 +5,7 @@ baseurl: "/jappa-labs"
 theme: minima
 github_username: Erriccc
 
-# All of these are supported by GitHub Pages without a build Action.
+# All of these are supported by the GitHub Pages build (.github/workflows/pages.yml).
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -19,12 +19,22 @@ plugins:
 titles_from_headings:
   strip_title: true
 
+# Turn relative .md links in posts (docs/research/_posts) into page links too.
+relative_links:
+  collections: true
+
 defaults:
   - scope:
       path: ""
     values:
       layout: page
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 
 header_pages:
   - send-to-nigeria.md
+  - research/index.md
   - about.md
