@@ -20,6 +20,15 @@ built_for_west_africa:
   - repo: aa-Teye/Prop_collect
     category: land and title
     description: PropCollect, a property rate collection and analytics system for Ghana.
+  - repo: adeyanjufuhad/sowo
+    category: messaging and handoff
+    description: WhatsApp sales assistant for Nigerian vendors with Paystack payments and human takeover.
+  - repo: Dakiss-dev/Shipping-hub
+    category: diaspora shipping
+    description: Package intake and shipment batches for diaspora shipping operators.
+  - repo: Rexangels/RouteSure
+    category: diaspora shipping
+    description: Early-stage starter for Nigerian address validation, built around the NIPOST postcode API.
 
 building_blocks:
   - repo: opengisch/QField
@@ -55,3 +64,69 @@ building_blocks:
   - repo: MrObadiahEJ/terra
     category: land and title
     description: Terra, a blockchain-anchored land registry built on the ISO 19152 (LADM) standard.
+  - repo: keanehatescoding/land-title-monitor
+    category: land and title
+    description: Land-title monitoring and verification service for Kenya. No licence yet.
+  - repo: VROOM-Project/vroom
+    category: pickup routing
+    description: Vehicle-routing optimiser for pickups with time windows and capacity.
+  - repo: GIScience/openrouteservice
+    category: pickup routing
+    description: Routing and isochrone API with route optimisation.
+  - repo: fleetbase/fleetbase
+    category: dispatch and portals
+    description: Open logistics platform with dispatch, driver app and customer storefront.
+  - repo: fleetbase/navigator-app
+    category: dispatch and portals
+    description: Open driver mobile app for the Fleetbase platform.
+  - repo: calcom/cal.diy
+    category: booking
+    description: Open-source scheduling for booking pickup slots (formerly calcom/cal.com).
+  - repo: alextselegidis/easyappointments
+    category: booking
+    description: Self-hosted appointment booking app.
+  - repo: openboxes/openboxes
+    category: warehouse and manifest
+    description: Open-source inventory and shipment management.
+  - repo: karrioapi/karrio
+    category: shipping labels
+    description: Self-hosted shipping API for rates and labels. Archived, tracked for reference.
+  - repo: chatwoot/chatwoot
+    category: messaging and handoff
+    description: Shared inbox with a WhatsApp Cloud API channel and human handoff.
+  - repo: activepieces/activepieces
+    category: messaging and handoff
+    description: Open workflow automation with WhatsApp, Stripe and Chatwoot pieces.
+  - repo: n8n-io/n8n
+    category: messaging and handoff
+    description: Workflow automation with WhatsApp Cloud nodes (fair-code licence).
+  - repo: openwallet-foundation/credo-ts
+    category: identity and verification
+    description: TypeScript framework for issuing, holding and verifying digital credentials.
+  - repo: openwallet-foundation/acapy
+    category: identity and verification
+    description: Python agent for issuing and verifying verifiable credentials.
+  - repo: inji/inji-verify
+    category: identity and verification
+    description: MOSIP's credential verifier with QR-based verification.
+  - repo: inji/inji-wallet
+    category: identity and verification
+    description: MOSIP's wallet for national-ID credentials; Nigeria's national ID is moving to MOSIP.
+  - repo: mosip/esignet
+    category: identity and verification
+    description: MOSIP's national-ID login service (OpenID Connect).
+  - repo: smileidentity/smileid-sdk-js
+    category: identity and verification
+    description: Smile ID server SDK (JS/TS) for African identity and document checks.
+  - repo: smileidentity/smileid-sdk-python
+    category: identity and verification
+    description: Smile ID server SDK (Python) for African identity and document checks.
+  - repo: transparency-dev/tessera
+    category: trust and chain of custody
+    description: Library for tamper-evident logs, usable for seal and custody records.
+  - repo: sigstore/rekor
+    category: trust and chain of custody
+    description: Signed, tamper-evident transparency log.
+  - repo: OpenCerts/opencerts-website
+    category: identity and verification
+    description: Verifier for tamper-proof documents and certificates.
