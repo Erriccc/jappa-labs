@@ -1,0 +1,12 @@
+{
+  "name": "send-to-nigeria",
+  "version": "0.1.0",
+  "description": "Helps shoppers in Nigeria and senders in the US pick the cheapest, safest way to get goods from the US to Nigeria, using sourced, dated prices that it re-checks live before quoting.",
+  "author": {
+    "name": "Jappa Labs"
+  },
+  "homepage": "https://github.com/Erriccc/jappa-labs",
+  "repository": "https://github.com/Erriccc/jappa-labs",
+  "license": "MIT",
+  "keywords": ["nigeria", "shipping", "freight-forwarding", "diaspora", "customs", "lagos"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "jappa-labs",
+  "description": "Tools from Jappa Labs for West Africans at home and abroad",
+  "owner": {
+    "name": "Jappa Labs"
+  },
+  "plugins": [
+    {
+      "name": "send-to-nigeria",
+      "source": "./plugins/send-to-nigeria",
+      "description": "Compare the cheapest, safest ways to get goods from the US to Nigeria: relatives, Amazon, forwarders, traveller apps, couriers or buying locally. Includes sourced, dated prices, the $300 duty rule and prohibited items.",
+      "category": "productivity",
+      "keywords": ["nigeria", "shipping", "freight-forwarding", "diaspora", "customs"]
+    }
+  ]
+}
