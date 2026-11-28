@@ -32,6 +32,33 @@ built_for_west_africa:
   - repo: Josephadebiyi/neringa
     category: diaspora shipping
     description: Bago, a peer-to-peer international package delivery platform matching senders with travellers, with KYC, escrow, and Stripe and Paystack payments.
+  - repo: bajoski34/mcp-flutterwave
+    category: prices and payments
+    description: MCP server for the Flutterwave API, with tools for payment links, direct charges, transfers, virtual accounts, Nigerian bill payments, BVN and bank account checks, and NGN, GHS and USD FX trades. Also ships a browser chat app.
+  - repo: zerotaldev/paystack-mcp
+    category: prices and payments
+    description: Early MCP server for Paystack in Nigeria, Ghana, South Africa, Kenya and Côte d'Ivoire that creates checkout links, verifies payments and lists transactions, with guards on live keys and amounts. The README notes checkout creation has not yet been tried with a real transaction.
+  - repo: chimaobikanu/nigerian-reference-data-mcp
+    category: identity and verification
+    description: MCP client for a hosted pay-per-call API (USDC over x402) that format-checks NIN, BVN, TIN and CAC numbers, validates NUBAN account numbers and looks up phone networks. The checks run on the hosted service, not in this repo, and no identity database is queried.
+  - repo: georgeonweb3/whatsapp-vendor-agent
+    category: messaging and handoff
+    description: Keyword-based WhatsApp sales bot demo for Nigerian vendors that answers price, stock and delivery-fee questions from a JSON catalogue and drafts orders. The README lists Paystack payment links; in the code the link is built from a URL pattern, not through the Paystack API, and replies are not yet sent back to WhatsApp.
+  - repo: Obiajulu-gif/confirmly
+    category: messaging and handoff
+    description: Confirmly, a multi-merchant WhatsApp ordering app that uses an LLM to read orders from chat, prices them server-side, takes payment through Monnify and marks orders paid only after checking with Monnify's API. Set up for the Monnify sandbox.
+  - repo: thechiddx3/nairalook
+    category: prices and payments
+    description: Nairalook, a Chrome extension and small API that scrape parallel and official naira rates for USD, GBP and EUR from a third-party rate site. The README calls the official rate the I&E window rate and says MIT licence; the code reads the site's CBN figure and the repo has no licence file.
+  - repo: Emzy123/Naira-rate-api
+    category: prices and payments
+    description: Hackathon API that sells a USD/NGN rate from open.er-api.com, labelled official, and street rates from Quidax and Luno USDT/NGN tickers per call, paid in stablecoins on Celo over x402. Includes a Telegram bot client. The README says MIT licence, but the repo has no licence file.
+  - repo: NOVIX37/NairaWise
+    category: prices and payments
+    description: NairaWise, a static USD to NGN converter in English and Hausa that shows the CBN reference rate (via the Frankfurter API) with its rate date and lets users enter a dealer's rate. No licence yet.
+  - repo: acekyd/made-in-nigeria
+    category: directories
+    description: Community-curated list of open-source tools and projects built by Nigerian developers, with a companion website.
 
 building_blocks:
   - repo: opengisch/QField
