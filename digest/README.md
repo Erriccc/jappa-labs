@@ -1,6 +1,6 @@
 # Open-source digest
 
-A regularly updated digest of open-source projects that serve Nigerians and West Africans, at home and in the diaspora. It covers land and title, property and rent, farm and farm data, and prices and payments. Editions are published in [docs/digest/](../docs/digest/). See [issue #6](https://github.com/Erriccc/jappa-labs/issues/6).
+A regularly updated digest of open-source projects that serve Nigerians and West Africans, at home and in the diaspora. It covers land and title, property and rent, farm and farm data, prices and payments, shipping and pickup, messaging, and identity and trust. Editions are published in [docs/digest/](../docs/digest/). See [issue #6](https://github.com/Erriccc/jappa-labs/issues/6).
 
 ## What is here
 
