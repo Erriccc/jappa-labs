@@ -1,0 +1,6 @@
+{%- comment -%}
+  "Back to ..." link; back_url and back_label are set per folder in _config.yml.
+{%- endcomment -%}
+{%- if page.back_url -%}
+<p class="back-link"><a href="{{ page.back_url | relative_url }}">&larr; Back to {{ page.back_label }}</a></p>
+{%- endif -%}

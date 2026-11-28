@@ -24,6 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      issues: read
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
         with:
@@ -38,6 +39,14 @@ jobs:
 
       - name: Test the digest and the site
         run: python3 -m unittest discover -s digest/tests
+
+      # Open issues for the "Open work" page (digest/site_issues.py). Writes []
+      # on any failure so the build never fails here.
+      - name: Fetch open issues for the site
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: python3 digest/site_issues.py || { mkdir -p docs/_data && echo '[]' > docs/_data/issues.json; }
 
       - uses: actions/jekyll-build-pages@44a6e6beabd48582f863aeeb6cb2151cc1716697  # v1.0.13
         with:

@@ -61,13 +61,4 @@ The guide rests on public research into routes, rules and the companies on this 
 
 Jappa Labs also publishes a weekly digest of open-source projects that serve Nigerians and West Africans, crediting the people who build them. See [About](about.md) for how it works.
 
-{% assign editions = site.pages | where_exp: "p", "p.path contains 'digest/'" | sort: "path" | reverse %}
-{% if editions.size > 0 %}
-<ul>
-{% for edition in editions %}
-  <li><a href="{{ edition.url | relative_url }}">{{ edition.title | default: edition.name }}</a></li>
-{% endfor %}
-</ul>
-{% else %}
-No editions yet.
-{% endif %}
+{% include editions.html pages=site.pages %}

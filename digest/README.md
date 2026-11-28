@@ -8,6 +8,7 @@ A regularly updated digest of open-source projects that serve Nigerians and West
 - `scan.py` reads public GitHub data for each project and records what shipped.
 - `data/YYYY-MM-DD.json` holds the results of each scan.
 - `render.py` builds a weekly edition from the scan files.
+- `site_issues.py` writes the open issues for the site's "Open work" page at build time, leaving out private ones (listed in the file, or labelled `private`).
 - `tests/` holds the tests for `render.py` and the site. Run them with `python3 -m unittest discover -s digest/tests`.
 
 ## Run the scan

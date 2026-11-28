@@ -30,13 +30,4 @@ Found a better price, a new city, or a mistake? [Open an issue](https://github.c
 
 ## For builders
 
-The guide is also a plugin for Claude Code. From inside Claude Code:
-
-```
-/plugin marketplace add Erriccc/jappa-labs
-/plugin install send-to-nigeria@jappa-labs
-```
-
-Then ask in plain words, for example "cheapest way to get an air fryer from Atlanta to Lagos?", or run `/send-to-nigeria:ship-quote` for a step-by-step quote. The plugin re-checks live pages before giving a quote.
-
-The full source is in [plugins/send-to-nigeria](https://github.com/Erriccc/jappa-labs/tree/main/plugins/send-to-nigeria).
+The guide is also a skill for AI assistants. See [the skill](skill.md) for what it does and how to install it.
